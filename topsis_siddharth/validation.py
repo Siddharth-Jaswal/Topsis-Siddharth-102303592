@@ -19,8 +19,24 @@ def load_and_validate_csv(path):
 
     criteria = df.iloc[:, 1:]
 
-    if not criteria.applymap(lambda x: isinstance(x, (int, float))).all().all():
-        raise ValueError("All criteria values must be numeric")
+    # 1️⃣ Check for missing values
+    if criteria.isnull().values.any():
+        rows, cols = criteria.isnull().to_numpy().nonzero()
+        col_name = criteria.columns[cols[0]]
+        row_index = rows[0] + 2  # +2 for header and 0-index
+        raise ValueError(
+            f"Missing value detected at row {row_index}, column '{col_name}'"
+        )
+
+    # 2️⃣ Force numeric conversion
+    for col in criteria.columns:
+        try:
+            pd.to_numeric(criteria[col])
+        except ValueError:
+            raise ValueError(
+                f"Non-numeric value found in column '{col}'. "
+                "Categorical values are not allowed."
+            )
 
     return df
 
