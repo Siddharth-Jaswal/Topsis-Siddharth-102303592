@@ -14,17 +14,17 @@ This project is built as:
 
 ---
 
-## 📌 What is TOPSIS?
+##  What is TOPSIS?
 
 **TOPSIS (Technique for Order Preference by Similarity to Ideal Solution)** is a popular **Multi-Criteria Decision Making (MCDM)** technique.
 
-### 🔑 Core Principle
+###  Core Principle
 
 The best alternative is the one that:
 - Is **closest to the ideal best solution**
 - Is **farthest from the ideal worst solution**
 
-### 📊 Common Applications
+###  Common Applications
 
 | Domain | Usage |
 |--------|-------|
@@ -35,7 +35,7 @@ The best alternative is the one that:
 
 ---
 
-## 🧠 TOPSIS Algorithm Flow
+##  TOPSIS Algorithm Flow
 
 ```mermaid
 flowchart TD
@@ -52,7 +52,7 @@ flowchart TD
 
 ---
 
-## 🧩 Program Workflow (Software Perspective)
+##  Program Workflow (Software Perspective)
 
 ```mermaid
 flowchart LR
@@ -65,7 +65,7 @@ flowchart LR
 
 ---
 
-## 🏗️ Module Interaction Diagram
+##  Module Interaction Diagram
 
 ```mermaid
 flowchart LR
@@ -77,7 +77,7 @@ flowchart LR
 
 ---
 
-## 📦 Installation
+##  Installation
 
 Install the package from PyPI:
 
@@ -87,7 +87,7 @@ pip install Topsis-Siddharth-102303592
 
 ---
 
-## ▶️ Usage (Command Line)
+##  Usage (Command Line)
 
 ### General Syntax
 
@@ -103,7 +103,7 @@ topsis sample.csv "0.4,0.4,0.2" "+,+,-" result.csv
 
 ---
 
-## 📥 Input File Format
+##  Input File Format
 
 ### Requirements
 
@@ -126,7 +126,7 @@ D,275,32,8
 
 ---
 
-## 📤 Output File Format
+##  Output File Format
 
 ### Output Characteristics
 
@@ -148,7 +148,7 @@ D,275,32,8,0.8895,1
 
 ---
 
-## ⚠️ Error Handling & Validation
+##  Error Handling & Validation
 
 The program validates the following:
 
@@ -165,7 +165,7 @@ All errors are reported with **clear, user-friendly messages**.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```text
 Topsis-Siddharth-102303592/
@@ -182,7 +182,7 @@ Topsis-Siddharth-102303592/
 
 ---
 
-## 👤 Author
+##  Author
 
 | Name | Role |
 |------|------|
@@ -190,7 +190,7 @@ Topsis-Siddharth-102303592/
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the **MIT License**.
 
